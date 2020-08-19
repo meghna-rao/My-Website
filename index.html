@@ -149,14 +149,7 @@
         list-style: none;
       }
     
-     .grid{
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr ;
-     row-gap: 0;
-      } 
-
+   
     @media(min-width:900px)  {
     
     .grid{
@@ -256,6 +249,8 @@ li a:hover {
         box-shadow:1px 1px 4px black;
         width: 70%;
         margin-left:7rem;
+         margin-bottom:0;
+         margin-top:3rem;
       }
 }
 
@@ -264,7 +259,7 @@ li a:hover {
 
           
         text-decoration: none;
-        font-size: 70px;
+        font-size: 40px;
         transition: all ease-in-out 250ms;
         color: rgb(62, 25, 197);
         text-shadow:2px 2px rgb(255, 255, 255);
@@ -276,10 +271,44 @@ li a:hover {
 
       @media(min-width:900px)
       {
+         .box li a {
+        
+
+          
+        text-decoration: none;
+        font-size: 70px;
+        transition: all ease-in-out 250ms;
+        color: rgb(62, 25, 197);
+        text-shadow:2px 2px rgb(255, 255, 255);
+      }
         li a{
           font-size:1.5rem;
         }
       }
+      .box {
+  padding: 0;
+
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+}
+
+@media(max-width:900px)
+{
+.box p {
+  text-align: justify;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.box li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+}
 
 h2{
   color: rgb(32, 32, 32) ;
@@ -294,6 +323,23 @@ h3{
   font-family:"Vibur",cursive;
   font-size:2rem;
   margin-bottom:0;
+}
+
+@media(max-width:900px)
+{
+
+  .box{
+    margin-left:11rem;
+  
+  }
+  .box li a{
+    font-size:60px;
+  }
+
+  .para{
+    margin-top:1rem;
+    margin-left:7rem;
+  }
 }
     </style>
   </head>
@@ -357,6 +403,7 @@ h3{
           ><i class="fa fa-linkedin" aria-hidden="true"></i
         ></a>
       </li>
+      <br>
     </div>
     
     <div class="para">
@@ -374,7 +421,8 @@ h3{
        kmeghna2000@gmail.com
       </h2>
     </a>
-
+<br>
+<br>
   </body>
    
 </html>
