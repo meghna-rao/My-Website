@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+ <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+
+
+ <style>
+    *{
+
+        padding:0;
+        margin:0;
+      }
+      body {
+     
+    margin: 0;
+    padding: 0;
+
+          
+       background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+        background-image: linear-gradient(to top, #c1f1d7 0%, #70b1e7 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+        font-family: "Vibur", cursive;
+        /*   the main font */
+        font-family: "Abel", sans-serif;
+
+      }
+
+      .container {
+        text-align: center;
+      }
+      .contain {
+        position: relative;
+        width: 50%;
+      }
+      .contain img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Style the button and place it in the middle of the container/image */
+      .contain .butn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .btn {
+        background-image: "https://image.flaticon.com/icons/svg/1807/1807616.svg";
+        border: 1px solid rgb(116, 114, 250);
+        background: rgb(106, 71, 231);
+        padding: 10px 20px;
+        width: 3cm;
+        font-size: 20px;
+        font-family: "montserrat";
+        font-weight: 200;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden;
+        color: white;
+        border-radius:25px;
+      }
+      .btn:hover {
+        color: black;
+        height: 0%;
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: 0.8s;
+        color: salmon;
+        top: 0;
+        border-radius: 50% 50% 0 0;
+      }
+
+      .footer {
+        background-color: rgba(0, 0, 0, 0.514);
+        margin-top: 3rem;
+
+        color: rgb(243, 168, 159);
+        text-align: center;
+        height: 2.1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: inline-block;
+      }
+      #grad {
+        background-image: linear-gradient(grey, white);
+      }
+
+      #bottomDiv {
+        position: absolute;
+        bottom: 0px;
+      }
+
+      .para {
+        font-size: 1.5rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        text-align: center;
+        color: rgba(22, 22, 22, 0.856);
+        font-family: "Vibur", cursive;
+      }
+      .cntr {
+        text-align: center;
+        color: antiquewhite;
+      }
+
+      .box {
+        padding: 0;
+
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-family: "Century Gothic", sans-serif;
+      }
+
+      .box p {
+        text-align: justify;
+      }
+      ul {
+        margin-bottom: 0;
+        padding: 0;
+      }
+      .box li {
+        display: inline-block;
+        margin: 10px;
+        list-style: none;
+      }
+    
+     .grid{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+     row-gap: 0;
+      } 
+
+    @media(min-width:900px)  {
+    
+    .grid{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+       padding-top:3rem;
+        padding-bottom:3rem;
+      }
+      .maingrid{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+
+    }
+
+        
+
+     
+      ul {
+  list-style-type: none;
+  text-align: center;
+ margin-bottom: 2rem;
+
+  overflow: hidden;
+   background-image: linear-gradient(to right, #7067e7 0%, 
+        rgb(47, 9, 150) 100%);
+  box-shadow: 1px 1px 4px black;
+}
+
+ul a:hover{
+background-color:white;
+}
+.navicon {
+  margin: 2mm;
+  font-size: 7mm;
+  color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(7, 7, 7);
+  text-align: center;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 700;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgba(148, 173, 240, 0);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px white;
+  font-size:1.3rem;
+}
+
+.topnav {
+
+   margin-bottom: 1rem;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.bodycontainer{
+        border: 0.5rem solid white;
+        box-shadow:1px 1px 4px black;
+        width: 70%;
+        margin-left:1rem;
+      }
+@media(min-width:900px)
+{
+
+ .bodycontainer{
+        border: 0.5rem solid white;
+        box-shadow:1px 1px 4px black;
+        width: 70%;
+        margin-left:7rem;
+      }
+}
+
+  .box li a {
+        
+
+          
+        text-decoration: none;
+        font-size: 50px;
+        transition: all ease-in-out 250ms;
+      }
+      .box li a:hover {
+        color: #5f5d5d;
+        background-color:none;
+      }
+
+      @media(min-width:900px)
+      {
+        li a{
+          font-size:1.5rem;
+        }
+      }
+
+
+ </style>
+    <head>
+   
+    <div class="container">
+     
+
+      <div class="topnav" id="myTopnav">
+      <ul>
+       
+        <li >
+          <a href="index.html">
+           <i class="fa fa-home"></i></a
+          >
+        </li>
+        <li>
+          <a href="./projects.html">
+            Projects</a
+          >
+        </li>
+        <li>
+          <a href="articles.html">
+            Articles
+          </a>
+        </li>
+
+           <li>
+             
+          <a href="Resume.pdf" target="_blank">
+           Resume
+          </a>
+        </li>
+         
+       
+       
+      </ul>
+    </div>
+   
+  </head>
+
+  <body>
+   
+    <br />
+
+    <h1 class="cntr box" style="color: rgb(250, 233, 233);">Articles</h1>
+    <br />
+
+   
+  </body>
+</html>
